@@ -1,0 +1,11 @@
+Current Reading - Previous Reading = Total Consumed(TC)
+Minimum Cubic - Usage | Rate/CM | Amount       | Total
+ 		  10  |	 10.71  | U*R/CM       |
+Excess Cubic -  TC-U  |  15.63  | (TC-U)*15.63 | (U*R/CM)+((TC-U)*15.63)
+VAT                                            | Total*0.12
+Current Bill                                   | ((U*R/CM)+((TC-U)*15.63))+(Total*0.12)
+Previous Bill Balance                          | (User Previous Balance)
+Amount Due				       | (Current Bill)+(Previous Bill Balance)
+Less Payments:                                 | (User Less Payments)
+Balance from Pilipinas                         | (User Previous Balance from Pilipinas)
+TOTAL DUE                                      | (Amount Due)-(Less Payments)+(BfP)

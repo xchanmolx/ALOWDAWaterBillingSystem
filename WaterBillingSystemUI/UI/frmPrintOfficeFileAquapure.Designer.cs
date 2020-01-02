@@ -1,0 +1,66 @@
+﻿namespace WaterBillingSystemUI.UI
+{
+    partial class frmPrintOfficeFileAquapure
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrintOfficeFileAquapure));
+            this.reportViewerPrintOfficeFileAquapure = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SuspendLayout();
+            // 
+            // reportViewerPrintOfficeFileAquapure
+            // 
+            this.reportViewerPrintOfficeFileAquapure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewerPrintOfficeFileAquapure.LocalReport.ReportEmbeddedResource = "WaterBillingSystemUI.rptPrintOfficeFileAquapure.rdlc";
+            this.reportViewerPrintOfficeFileAquapure.Location = new System.Drawing.Point(0, 0);
+            this.reportViewerPrintOfficeFileAquapure.Name = "reportViewerPrintOfficeFileAquapure";
+            this.reportViewerPrintOfficeFileAquapure.Size = new System.Drawing.Size(1251, 512);
+            this.reportViewerPrintOfficeFileAquapure.TabIndex = 0;
+            // 
+            // frmPrintOfficeFileAquapure
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1251, 512);
+            this.Controls.Add(this.reportViewerPrintOfficeFileAquapure);
+            this.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmPrintOfficeFileAquapure";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Print Office File for \"AQUAPURE\"";
+            this.Load += new System.EventHandler(this.frmPrintOfficeFileAquapure_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewerPrintOfficeFileAquapure;
+    }
+}

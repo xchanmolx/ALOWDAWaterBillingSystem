@@ -1,0 +1,1256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{224C5809-81FB-4D19-8D51-C5682660796B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WaterBillingSystemUI</RootNamespace>
+    <AssemblyName>WaterBillingSystemUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tapwater.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\xchanmolx Files\1. To Become a C# Developer Expert\c# apps\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.v12.12.0.0.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.v12.12.0.0.0\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.v12.12.0.0.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AngilanCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AngilanCustomControl.Designer.cs">
+      <DependentUpon>AngilanCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquapureCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AquapureCustomControl.Designer.cs">
+      <DependentUpon>AquapureCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\AngilanBLL.cs" />
+    <Compile Include="BLL\AquapureBLL.cs" />
+    <Compile Include="BLL\BojoBLL.cs" />
+    <Compile Include="BLL\BonbonAngilanBLL.cs" />
+    <Compile Include="BLL\BonbonMiguelBLL.cs" />
+    <Compile Include="BLL\BonbonUpperBLL.cs" />
+    <Compile Include="BLL\EsperanzaModingBLL.cs" />
+    <Compile Include="BLL\KantabogonBLL.cs" />
+    <Compile Include="BLL\KawasanBLL.cs" />
+    <Compile Include="BLL\OlangoEsperanzaBLL.cs" />
+    <Compile Include="BLL\PoblacionKanlagonoBLL.cs" />
+    <Compile Include="BLL\PunayBLL.cs" />
+    <Compile Include="BLL\SaksakBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="BLL\ZaragosaBLL.cs" />
+    <Compile Include="BojoCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BojoCustomControl.Designer.cs">
+      <DependentUpon>BojoCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BonbonAngilanCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BonbonAngilanCustomControl.Designer.cs">
+      <DependentUpon>BonbonAngilanCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BonbonMiguelCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BonbonMiguelCustomControl.Designer.cs">
+      <DependentUpon>BonbonMiguelCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BonbonUpperCustomControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BonbonUpperCustomControl1.Designer.cs">
+      <DependentUpon>BonbonUpperCustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AngilanDAL.cs" />
+    <Compile Include="DAL\AquapureDAL.cs" />
+    <Compile Include="DAL\BojoDAL.cs" />
+    <Compile Include="DAL\BonbonAngilanDAL.cs" />
+    <Compile Include="DAL\BonbonMiguelDAL.cs" />
+    <Compile Include="DAL\BonbonUpperDAL.cs" />
+    <Compile Include="DAL\EsperanzaModingDAL.cs" />
+    <Compile Include="DAL\KantabogonDAL.cs" />
+    <Compile Include="DAL\KawasanDAL.cs" />
+    <Compile Include="DAL\OlangoEsperanzaDAL.cs" />
+    <Compile Include="DAL\PoblacionKanlagonoDAL.cs" />
+    <Compile Include="DAL\PunayDAL.cs" />
+    <Compile Include="DAL\SaksakDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="DAL\ZaragosaDAL.cs" />
+    <Compile Include="dsPrintMonthlyReadingAquapure.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintMonthlyReadingAquapure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintOfficeFileAquapure.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintOfficeFileAquapure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentAngilan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentAngilan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentAquapure.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentAquapure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentBojo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentBojo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentBonbonAngilan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentBonbonAngilan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentBonbonMiguel.cs">
+      <DependentUpon>dsPrintPaymentBonbonMiguel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentBonbonMiguel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentBonbonMiguel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentBonbonUpper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentBonbonUpper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentEsperanzaModing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentEsperanzaModing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentKantabogon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentKantabogon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentKawasan.cs">
+      <DependentUpon>dsPrintPaymentKawasan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentKawasan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentKawasan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentOlangoEsperanza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentOlangoEsperanza.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentPoblacionKanlagono.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentPoblacionKanlagono.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentPunay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentPunay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentSaksak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentSaksak.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintPaymentZaragosa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintPaymentZaragosa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingAngilan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingAngilan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingAquapure.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingAquapure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingBojo.cs">
+      <DependentUpon>dsPrintReadingBojo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingBojo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingBojo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingBonbonAngilan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingBonbonAngilan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingBonbonMiguel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingBonbonMiguel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingBonbonUpper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingBonbonUpper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingEsperanzaModing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingEsperanzaModing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingKantabogon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingKantabogon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingKawasan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingKawasan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingOlangoEsperanza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingOlangoEsperanza.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingPoblacionKanlagono.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingPoblacionKanlagono.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingPunay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingPunay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingSaksak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingSaksak.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrintReadingZaragosa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrintReadingZaragosa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EsperanzaModingCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EsperanzaModingCustomControl.Designer.cs">
+      <DependentUpon>EsperanzaModingCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintMonthlyReadingAquapure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintMonthlyReadingAquapure.Designer.cs">
+      <DependentUpon>frmPrintMonthlyReadingAquapure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonUpper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonUpper.Designer.cs">
+      <DependentUpon>frmPrintPaymentBonbonUpper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingAngilan.Designer.cs">
+      <DependentUpon>frmPrintReadingAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonUpper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonUpper.Designer.cs">
+      <DependentUpon>frmPrintReadingBonbonUpper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptAngilan.Designer.cs">
+      <DependentUpon>frmPrintReceiptAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMainWBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMainWBS.Designer.cs">
+      <DependentUpon>frmMainWBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeCustomControl.Designer.cs">
+      <DependentUpon>HomeCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KantabogonCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KantabogonCustomControl.Designer.cs">
+      <DependentUpon>KantabogonCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KawasanCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KawasanCustomControl.Designer.cs">
+      <DependentUpon>KawasanCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlangoEsperanzaCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OlangoEsperanzaCustomControl.Designer.cs">
+      <DependentUpon>OlangoEsperanzaCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoblacionKanlagonoCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PoblacionKanlagonoCustomControl.Designer.cs">
+      <DependentUpon>PoblacionKanlagonoCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PunayCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PunayCustomControl.Designer.cs">
+      <DependentUpon>PunayCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaksakCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaksakCustomControl.Designer.cs">
+      <DependentUpon>SaksakCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentAngilan.Designer.cs">
+      <DependentUpon>frmPrintPaymentAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintOfficeFileAquapure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintOfficeFileAquapure.Designer.cs">
+      <DependentUpon>frmPrintOfficeFileAquapure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentAquapure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentAquapure.Designer.cs">
+      <DependentUpon>frmPrintPaymentAquapure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBojo.Designer.cs">
+      <DependentUpon>frmPrintPaymentBojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonAngilan.Designer.cs">
+      <DependentUpon>frmPrintPaymentBonbonAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonMiguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentBonbonMiguel.Designer.cs">
+      <DependentUpon>frmPrintPaymentBonbonMiguel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentEsperanzaModing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentEsperanzaModing.Designer.cs">
+      <DependentUpon>frmPrintPaymentEsperanzaModing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentKantabogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentKantabogon.Designer.cs">
+      <DependentUpon>frmPrintPaymentKantabogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentKawasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentKawasan.Designer.cs">
+      <DependentUpon>frmPrintPaymentKawasan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentOlangoEsperanza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentOlangoEsperanza.Designer.cs">
+      <DependentUpon>frmPrintPaymentOlangoEsperanza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentPoblacionKanlagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentPoblacionKanlagono.Designer.cs">
+      <DependentUpon>frmPrintPaymentPoblacionKanlagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentPunay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentPunay.Designer.cs">
+      <DependentUpon>frmPrintPaymentPunay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentSaksak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentSaksak.Designer.cs">
+      <DependentUpon>frmPrintPaymentSaksak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentZaragosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintPaymentZaragosa.Designer.cs">
+      <DependentUpon>frmPrintPaymentZaragosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingAquapure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingAquapure.Designer.cs">
+      <DependentUpon>frmPrintReadingAquapure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBojo.Designer.cs">
+      <DependentUpon>frmPrintReadingBojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonAngilan.Designer.cs">
+      <DependentUpon>frmPrintReadingBonbonAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonMiguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingBonbonMiguel.Designer.cs">
+      <DependentUpon>frmPrintReadingBonbonMiguel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingEsperanzaModing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingEsperanzaModing.Designer.cs">
+      <DependentUpon>frmPrintReadingEsperanzaModing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingKantabogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingKantabogon.Designer.cs">
+      <DependentUpon>frmPrintReadingKantabogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingKawasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingKawasan.Designer.cs">
+      <DependentUpon>frmPrintReadingKawasan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingOlangoEsperanza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingOlangoEsperanza.Designer.cs">
+      <DependentUpon>frmPrintReadingOlangoEsperanza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingPoblacionKanlagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingPoblacionKanlagono.Designer.cs">
+      <DependentUpon>frmPrintReadingPoblacionKanlagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingPunay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingPunay.Designer.cs">
+      <DependentUpon>frmPrintReadingPunay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingSaksak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingSaksak.Designer.cs">
+      <DependentUpon>frmPrintReadingSaksak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingZaragosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReadingZaragosa.Designer.cs">
+      <DependentUpon>frmPrintReadingZaragosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptAquapure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptAquapure.Designer.cs">
+      <DependentUpon>frmPrintReceiptAquapure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBojo.Designer.cs">
+      <DependentUpon>frmPrintReceiptBojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonAngilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonAngilan.Designer.cs">
+      <DependentUpon>frmPrintReceiptBonbonAngilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonMiguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonMiguel.Designer.cs">
+      <DependentUpon>frmPrintReceiptBonbonMiguel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonUpper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptBonbonUpper.Designer.cs">
+      <DependentUpon>frmPrintReceiptBonbonUpper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptEsperanzaModing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptEsperanzaModing.Designer.cs">
+      <DependentUpon>frmPrintReceiptEsperanzaModing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptKantabogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptKantabogon.Designer.cs">
+      <DependentUpon>frmPrintReceiptKantabogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptKawasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptKawasan.Designer.cs">
+      <DependentUpon>frmPrintReceiptKawasan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptOlangoEsperanza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptOlangoEsperanza.Designer.cs">
+      <DependentUpon>frmPrintReceiptOlangoEsperanza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptPoblacionKanlagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptPoblacionKanlagono.Designer.cs">
+      <DependentUpon>frmPrintReceiptPoblacionKanlagono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptPunay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptPunay.Designer.cs">
+      <DependentUpon>frmPrintReceiptPunay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptSaksak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptSaksak.Designer.cs">
+      <DependentUpon>frmPrintReceiptSaksak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptZaragosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrintReceiptZaragosa.Designer.cs">
+      <DependentUpon>frmPrintReceiptZaragosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterBillingSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WaterBillingSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZaragosaCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZaragosaCustomControl.Designer.cs">
+      <DependentUpon>ZaragosaCustomControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AngilanCustomControl.resx">
+      <DependentUpon>AngilanCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquapureCustomControl.resx">
+      <DependentUpon>AquapureCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BojoCustomControl.resx">
+      <DependentUpon>BojoCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonbonAngilanCustomControl.resx">
+      <DependentUpon>BonbonAngilanCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonbonMiguelCustomControl.resx">
+      <DependentUpon>BonbonMiguelCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonbonUpperCustomControl1.resx">
+      <DependentUpon>BonbonUpperCustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsperanzaModingCustomControl.resx">
+      <DependentUpon>EsperanzaModingCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPrintMonthlyReadingAquapure.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentBonbonUpper.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingBonbonUpper.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintOfficeFileAquapure.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentAquapure.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentBojo.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentBonbonAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentBonbonMiguel.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentEsperanzaModing.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentKantabogon.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentKawasan.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentOlangoEsperanza.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentPoblacionKanlagono.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentPunay.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentSaksak.rdlc" />
+    <EmbeddedResource Include="rptPrintPaymentZaragosa.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingAquapure.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingBojo.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingBonbonAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingBonbonMiguel.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingEsperanzaModing.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingKantabogon.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingKawasan.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingOlangoEsperanza.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingPoblacionKanlagono.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingPunay.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingSaksak.rdlc" />
+    <EmbeddedResource Include="rptPrintReadingZaragosa.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptAquapure.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptBojo.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptBonbonAngilan.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptBonbonMiguel.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptBonbonUpper.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptEsperanzaModing.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptKantabogon.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptKawasan.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptOlangoEsperanza.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptPoblacionKanlagono.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptPunay.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptSaksak.rdlc" />
+    <EmbeddedResource Include="rptPrintReceiptZaragosa.rdlc" />
+    <EmbeddedResource Include="UI\frmPrintMonthlyReadingAquapure.resx">
+      <DependentUpon>frmPrintMonthlyReadingAquapure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentBonbonUpper.resx">
+      <DependentUpon>frmPrintPaymentBonbonUpper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingAngilan.resx">
+      <DependentUpon>frmPrintReadingAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingBonbonUpper.resx">
+      <DependentUpon>frmPrintReadingBonbonUpper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptAngilan.resx">
+      <DependentUpon>frmPrintReceiptAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmMainWBS.resx">
+      <DependentUpon>frmMainWBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeCustomControl.resx">
+      <DependentUpon>HomeCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KantabogonCustomControl.resx">
+      <DependentUpon>KantabogonCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KawasanCustomControl.resx">
+      <DependentUpon>KawasanCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlangoEsperanzaCustomControl.resx">
+      <DependentUpon>OlangoEsperanzaCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoblacionKanlagonoCustomControl.resx">
+      <DependentUpon>PoblacionKanlagonoCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PunayCustomControl.resx">
+      <DependentUpon>PunayCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaksakCustomControl.resx">
+      <DependentUpon>SaksakCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentAngilan.resx">
+      <DependentUpon>frmPrintPaymentAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintOfficeFileAquapure.resx">
+      <DependentUpon>frmPrintOfficeFileAquapure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentAquapure.resx">
+      <DependentUpon>frmPrintPaymentAquapure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentBojo.resx">
+      <DependentUpon>frmPrintPaymentBojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentBonbonAngilan.resx">
+      <DependentUpon>frmPrintPaymentBonbonAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentBonbonMiguel.resx">
+      <DependentUpon>frmPrintPaymentBonbonMiguel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentEsperanzaModing.resx">
+      <DependentUpon>frmPrintPaymentEsperanzaModing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentKantabogon.resx">
+      <DependentUpon>frmPrintPaymentKantabogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentKawasan.resx">
+      <DependentUpon>frmPrintPaymentKawasan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentOlangoEsperanza.resx">
+      <DependentUpon>frmPrintPaymentOlangoEsperanza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentPoblacionKanlagono.resx">
+      <DependentUpon>frmPrintPaymentPoblacionKanlagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentPunay.resx">
+      <DependentUpon>frmPrintPaymentPunay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentSaksak.resx">
+      <DependentUpon>frmPrintPaymentSaksak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintPaymentZaragosa.resx">
+      <DependentUpon>frmPrintPaymentZaragosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingAquapure.resx">
+      <DependentUpon>frmPrintReadingAquapure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingBojo.resx">
+      <DependentUpon>frmPrintReadingBojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingBonbonAngilan.resx">
+      <DependentUpon>frmPrintReadingBonbonAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingBonbonMiguel.resx">
+      <DependentUpon>frmPrintReadingBonbonMiguel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingEsperanzaModing.resx">
+      <DependentUpon>frmPrintReadingEsperanzaModing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingKantabogon.resx">
+      <DependentUpon>frmPrintReadingKantabogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingKawasan.resx">
+      <DependentUpon>frmPrintReadingKawasan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingOlangoEsperanza.resx">
+      <DependentUpon>frmPrintReadingOlangoEsperanza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingPoblacionKanlagono.resx">
+      <DependentUpon>frmPrintReadingPoblacionKanlagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingPunay.resx">
+      <DependentUpon>frmPrintReadingPunay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingSaksak.resx">
+      <DependentUpon>frmPrintReadingSaksak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReadingZaragosa.resx">
+      <DependentUpon>frmPrintReadingZaragosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptAquapure.resx">
+      <DependentUpon>frmPrintReceiptAquapure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptBojo.resx">
+      <DependentUpon>frmPrintReceiptBojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptBonbonAngilan.resx">
+      <DependentUpon>frmPrintReceiptBonbonAngilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptBonbonMiguel.resx">
+      <DependentUpon>frmPrintReceiptBonbonMiguel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptBonbonUpper.resx">
+      <DependentUpon>frmPrintReceiptBonbonUpper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptEsperanzaModing.resx">
+      <DependentUpon>frmPrintReceiptEsperanzaModing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptKantabogon.resx">
+      <DependentUpon>frmPrintReceiptKantabogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptKawasan.resx">
+      <DependentUpon>frmPrintReceiptKawasan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptOlangoEsperanza.resx">
+      <DependentUpon>frmPrintReceiptOlangoEsperanza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptPoblacionKanlagono.resx">
+      <DependentUpon>frmPrintReceiptPoblacionKanlagono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptPunay.resx">
+      <DependentUpon>frmPrintReceiptPunay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptSaksak.resx">
+      <DependentUpon>frmPrintReceiptSaksak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrintReceiptZaragosa.resx">
+      <DependentUpon>frmPrintReceiptZaragosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZaragosaCustomControl.resx">
+      <DependentUpon>ZaragosaCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dsPrintMonthlyReadingAquapure.xsc">
+      <DependentUpon>dsPrintMonthlyReadingAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintMonthlyReadingAquapure.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintMonthlyReadingAquapure.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintMonthlyReadingAquapure.xss">
+      <DependentUpon>dsPrintMonthlyReadingAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintOfficeFileAquapure.xsc">
+      <DependentUpon>dsPrintOfficeFileAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintOfficeFileAquapure.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintOfficeFileAquapure.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintOfficeFileAquapure.xss">
+      <DependentUpon>dsPrintOfficeFileAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentAngilan.xsc">
+      <DependentUpon>dsPrintPaymentAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentAngilan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentAngilan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentAngilan.xss">
+      <DependentUpon>dsPrintPaymentAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentAquapure.xsc">
+      <DependentUpon>dsPrintPaymentAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentAquapure.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentAquapure.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentAquapure.xss">
+      <DependentUpon>dsPrintPaymentAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBojo.xsc">
+      <DependentUpon>dsPrintPaymentBojo.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBojo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentBojo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentBojo.xss">
+      <DependentUpon>dsPrintPaymentBojo.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonAngilan.xsc">
+      <DependentUpon>dsPrintPaymentBonbonAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonAngilan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentBonbonAngilan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentBonbonAngilan.xss">
+      <DependentUpon>dsPrintPaymentBonbonAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonMiguel.xsc">
+      <DependentUpon>dsPrintPaymentBonbonMiguel.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonMiguel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentBonbonMiguel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentBonbonMiguel.xss">
+      <DependentUpon>dsPrintPaymentBonbonMiguel.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonUpper.xsc">
+      <DependentUpon>dsPrintPaymentBonbonUpper.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentBonbonUpper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentBonbonUpper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentBonbonUpper.xss">
+      <DependentUpon>dsPrintPaymentBonbonUpper.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentEsperanzaModing.xsc">
+      <DependentUpon>dsPrintPaymentEsperanzaModing.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentEsperanzaModing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentEsperanzaModing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentEsperanzaModing.xss">
+      <DependentUpon>dsPrintPaymentEsperanzaModing.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentKantabogon.xsc">
+      <DependentUpon>dsPrintPaymentKantabogon.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentKantabogon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentKantabogon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentKantabogon.xss">
+      <DependentUpon>dsPrintPaymentKantabogon.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentKawasan.xsc">
+      <DependentUpon>dsPrintPaymentKawasan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentKawasan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentKawasan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentKawasan.xss">
+      <DependentUpon>dsPrintPaymentKawasan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentOlangoEsperanza.xsc">
+      <DependentUpon>dsPrintPaymentOlangoEsperanza.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentOlangoEsperanza.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentOlangoEsperanza.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentOlangoEsperanza.xss">
+      <DependentUpon>dsPrintPaymentOlangoEsperanza.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentPoblacionKanlagono.xsc">
+      <DependentUpon>dsPrintPaymentPoblacionKanlagono.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentPoblacionKanlagono.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentPoblacionKanlagono.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentPoblacionKanlagono.xss">
+      <DependentUpon>dsPrintPaymentPoblacionKanlagono.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentPunay.xsc">
+      <DependentUpon>dsPrintPaymentPunay.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentPunay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentPunay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentPunay.xss">
+      <DependentUpon>dsPrintPaymentPunay.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentSaksak.xsc">
+      <DependentUpon>dsPrintPaymentSaksak.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentSaksak.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentSaksak.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentSaksak.xss">
+      <DependentUpon>dsPrintPaymentSaksak.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentZaragosa.xsc">
+      <DependentUpon>dsPrintPaymentZaragosa.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintPaymentZaragosa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintPaymentZaragosa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintPaymentZaragosa.xss">
+      <DependentUpon>dsPrintPaymentZaragosa.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingAngilan.xsc">
+      <DependentUpon>dsPrintReadingAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingAngilan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingAngilan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingAngilan.xss">
+      <DependentUpon>dsPrintReadingAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingAquapure.xsc">
+      <DependentUpon>dsPrintReadingAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingAquapure.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingAquapure.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingAquapure.xss">
+      <DependentUpon>dsPrintReadingAquapure.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBojo.xsc">
+      <DependentUpon>dsPrintReadingBojo.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBojo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingBojo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingBojo.xss">
+      <DependentUpon>dsPrintReadingBojo.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonAngilan.xsc">
+      <DependentUpon>dsPrintReadingBonbonAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonAngilan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingBonbonAngilan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingBonbonAngilan.xss">
+      <DependentUpon>dsPrintReadingBonbonAngilan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonMiguel.xsc">
+      <DependentUpon>dsPrintReadingBonbonMiguel.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonMiguel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingBonbonMiguel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingBonbonMiguel.xss">
+      <DependentUpon>dsPrintReadingBonbonMiguel.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonUpper.xsc">
+      <DependentUpon>dsPrintReadingBonbonUpper.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingBonbonUpper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingBonbonUpper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingBonbonUpper.xss">
+      <DependentUpon>dsPrintReadingBonbonUpper.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingEsperanzaModing.xsc">
+      <DependentUpon>dsPrintReadingEsperanzaModing.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingEsperanzaModing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingEsperanzaModing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingEsperanzaModing.xss">
+      <DependentUpon>dsPrintReadingEsperanzaModing.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingKantabogon.xsc">
+      <DependentUpon>dsPrintReadingKantabogon.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingKantabogon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingKantabogon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingKantabogon.xss">
+      <DependentUpon>dsPrintReadingKantabogon.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingKawasan.xsc">
+      <DependentUpon>dsPrintReadingKawasan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingKawasan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingKawasan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingKawasan.xss">
+      <DependentUpon>dsPrintReadingKawasan.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingOlangoEsperanza.xsc">
+      <DependentUpon>dsPrintReadingOlangoEsperanza.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingOlangoEsperanza.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingOlangoEsperanza.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingOlangoEsperanza.xss">
+      <DependentUpon>dsPrintReadingOlangoEsperanza.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingPoblacionKanlagono.xsc">
+      <DependentUpon>dsPrintReadingPoblacionKanlagono.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingPoblacionKanlagono.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingPoblacionKanlagono.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingPoblacionKanlagono.xss">
+      <DependentUpon>dsPrintReadingPoblacionKanlagono.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingPunay.xsc">
+      <DependentUpon>dsPrintReadingPunay.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingPunay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingPunay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingPunay.xss">
+      <DependentUpon>dsPrintReadingPunay.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingSaksak.xsc">
+      <DependentUpon>dsPrintReadingSaksak.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingSaksak.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingSaksak.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingSaksak.xss">
+      <DependentUpon>dsPrintReadingSaksak.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingZaragosa.xsc">
+      <DependentUpon>dsPrintReadingZaragosa.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrintReadingZaragosa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrintReadingZaragosa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPrintReadingZaragosa.xss">
+      <DependentUpon>dsPrintReadingZaragosa.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WaterBillingSystemDataSet1.xsc">
+      <DependentUpon>WaterBillingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WaterBillingSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WaterBillingSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WaterBillingSystemDataSet1.xss">
+      <DependentUpon>WaterBillingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WaterBillingSystemUI.BLL.AngilanBLL.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tapwater.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

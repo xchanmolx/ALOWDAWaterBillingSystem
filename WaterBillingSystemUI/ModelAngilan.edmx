@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WaterBillingSystemModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="WaterBillingSystemModelStoreContainer">
+          <EntitySet Name="tbl_Angilan" EntityType="WaterBillingSystemModel.Store.tbl_Angilan" store:Type="Tables" store:Schema="dbo" store:Name="tbl_Angilan">
+            <DefiningQuery>SELECT 
+      [tbl_Angilan].[ID] AS [ID], 
+      [tbl_Angilan].[Customer_Code] AS [Customer_Code], 
+      [tbl_Angilan].[First_Name] AS [First_Name], 
+      [tbl_Angilan].[Last_Name] AS [Last_Name], 
+      [tbl_Angilan].[Meter_Number] AS [Meter_Number], 
+      [tbl_Angilan].[Current_Reading] AS [Current_Reading], 
+      [tbl_Angilan].[Previous_Reading] AS [Previous_Reading], 
+      [tbl_Angilan].[Consumed] AS [Consumed], 
+      [tbl_Angilan].[Less_Cubic_Meter] AS [Less_Cubic_Meter], 
+      [tbl_Angilan].[Total_Cubic_Meter] AS [Total_Cubic_Meter], 
+      [tbl_Angilan].[Amount_Per_Cubic_Meter] AS [Amount_Per_Cubic_Meter], 
+      [tbl_Angilan].[Current_Bill] AS [Current_Bill], 
+      [tbl_Angilan].[Previous_Balance] AS [Previous_Balance], 
+      [tbl_Angilan].[Amount_Paid] AS [Amount_Paid], 
+      [tbl_Angilan].[Date_Paid] AS [Date_Paid], 
+      [tbl_Angilan].[OR_No] AS [OR_No], 
+      [tbl_Angilan].[Balance] AS [Balance], 
+      [tbl_Angilan].[Status] AS [Status], 
+      [tbl_Angilan].[Added_Date] AS [Added_Date], 
+      [tbl_Angilan].[Other_Information] AS [Other_Information]
+      FROM [dbo].[tbl_Angilan] AS [tbl_Angilan]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'WaterBillingSystem.dbo.tbl_Angilan' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="tbl_Angilan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Customer_Code" Type="varchar" MaxLength="30" />
+          <Property Name="First_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Meter_Number" Type="varchar" MaxLength="50" />
+          <Property Name="Current_Reading" Type="int" />
+          <Property Name="Previous_Reading" Type="int" />
+          <Property Name="Consumed" Type="decimal" />
+          <Property Name="Less_Cubic_Meter" Type="int" />
+          <Property Name="Total_Cubic_Meter" Type="decimal" />
+          <Property Name="Amount_Per_Cubic_Meter" Type="decimal" />
+          <Property Name="Current_Bill" Type="decimal" />
+          <Property Name="Previous_Balance" Type="varchar" MaxLength="50" />
+          <Property Name="Amount_Paid" Type="varchar" MaxLength="50" />
+          <Property Name="Date_Paid" Type="varchar" MaxLength="50" />
+          <Property Name="OR_No" Type="varchar" MaxLength="50" />
+          <Property Name="Balance" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Added_Date" Type="datetime" />
+          <Property Name="Other_Information" Type="varchar" MaxLength="250" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WaterBillingSystemModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="WaterBillingSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Angilan" EntityType="WaterBillingSystemModel.tbl_Angilan" />
+        </EntityContainer>
+        <EntityType Name="tbl_Angilan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Customer_Code" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="First_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Meter_Number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Current_Reading" Type="Int32" />
+          <Property Name="Previous_Reading" Type="Int32" />
+          <Property Name="Consumed" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Less_Cubic_Meter" Type="Int32" />
+          <Property Name="Total_Cubic_Meter" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Amount_Per_Cubic_Meter" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Current_Bill" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Previous_Balance" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Amount_Paid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Date_Paid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OR_No" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Balance" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Added_Date" Type="DateTime" />
+          <Property Name="Other_Information" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WaterBillingSystemModelStoreContainer" CdmEntityContainer="WaterBillingSystemEntities">
+          <EntitySetMapping Name="tbl_Angilan">
+            <EntityTypeMapping TypeName="WaterBillingSystemModel.tbl_Angilan">
+              <MappingFragment StoreEntitySet="tbl_Angilan">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Customer_Code" ColumnName="Customer_Code" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Meter_Number" ColumnName="Meter_Number" />
+                <ScalarProperty Name="Current_Reading" ColumnName="Current_Reading" />
+                <ScalarProperty Name="Previous_Reading" ColumnName="Previous_Reading" />
+                <ScalarProperty Name="Consumed" ColumnName="Consumed" />
+                <ScalarProperty Name="Less_Cubic_Meter" ColumnName="Less_Cubic_Meter" />
+                <ScalarProperty Name="Total_Cubic_Meter" ColumnName="Total_Cubic_Meter" />
+                <ScalarProperty Name="Amount_Per_Cubic_Meter" ColumnName="Amount_Per_Cubic_Meter" />
+                <ScalarProperty Name="Current_Bill" ColumnName="Current_Bill" />
+                <ScalarProperty Name="Previous_Balance" ColumnName="Previous_Balance" />
+                <ScalarProperty Name="Amount_Paid" ColumnName="Amount_Paid" />
+                <ScalarProperty Name="Date_Paid" ColumnName="Date_Paid" />
+                <ScalarProperty Name="OR_No" ColumnName="OR_No" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Added_Date" ColumnName="Added_Date" />
+                <ScalarProperty Name="Other_Information" ColumnName="Other_Information" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModelAngilan">
+        <EntityTypeShape EntityType="WaterBillingSystemModel.tbl_Angilan" Width="1.5" PointX="0.75" PointY="0.75" Height="4.8648079427083326" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
