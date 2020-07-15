@@ -79,7 +79,7 @@
             this.btnUpdate.Enabled = false;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,7 +115,7 @@
             // cmbBoxStatus
             // 
             this.cmbBoxStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbBoxStatus.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBoxStatus.FormattingEnabled = true;
             this.cmbBoxStatus.Items.AddRange(new object[] {
             "Status",
@@ -126,7 +126,7 @@
             "PriorityLessCBM"});
             this.cmbBoxStatus.Location = new System.Drawing.Point(536, 326);
             this.cmbBoxStatus.Name = "cmbBoxStatus";
-            this.cmbBoxStatus.Size = new System.Drawing.Size(121, 24);
+            this.cmbBoxStatus.Size = new System.Drawing.Size(121, 21);
             this.cmbBoxStatus.TabIndex = 67;
             // 
             // btnUserAgreement
@@ -135,7 +135,7 @@
             this.btnUserAgreement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUserAgreement.FlatAppearance.BorderSize = 0;
             this.btnUserAgreement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserAgreement.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserAgreement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserAgreement.ForeColor = System.Drawing.Color.Black;
             this.btnUserAgreement.Image = ((System.Drawing.Image)(resources.GetObject("btnUserAgreement.Image")));
             this.btnUserAgreement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,7 +155,7 @@
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -176,7 +176,7 @@
             this.btnDelete.Enabled = false;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +196,7 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,7 +216,7 @@
             this.btnReceipt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReceipt.FlatAppearance.BorderSize = 0;
             this.btnReceipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReceipt.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReceipt.ForeColor = System.Drawing.Color.Black;
             this.btnReceipt.Image = ((System.Drawing.Image)(resources.GetObject("btnReceipt.Image")));
             this.btnReceipt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,7 +236,7 @@
             this.btnPaymentForTreasurer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPaymentForTreasurer.FlatAppearance.BorderSize = 0;
             this.btnPaymentForTreasurer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaymentForTreasurer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentForTreasurer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaymentForTreasurer.ForeColor = System.Drawing.Color.Black;
             this.btnPaymentForTreasurer.Image = ((System.Drawing.Image)(resources.GetObject("btnPaymentForTreasurer.Image")));
             this.btnPaymentForTreasurer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,7 +256,7 @@
             this.btnPrintWaterReading.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrintWaterReading.FlatAppearance.BorderSize = 0;
             this.btnPrintWaterReading.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrintWaterReading.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintWaterReading.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintWaterReading.ForeColor = System.Drawing.Color.Black;
             this.btnPrintWaterReading.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintWaterReading.Image")));
             this.btnPrintWaterReading.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,7 +276,7 @@
             this.btnTransferThenUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTransferThenUpdate.FlatAppearance.BorderSize = 0;
             this.btnTransferThenUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransferThenUpdate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransferThenUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransferThenUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnTransferThenUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnTransferThenUpdate.Image")));
             this.btnTransferThenUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,7 +296,7 @@
             this.btnForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnForm.FlatAppearance.BorderSize = 0;
             this.btnForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnForm.ForeColor = System.Drawing.Color.Black;
             this.btnForm.Image = ((System.Drawing.Image)(resources.GetObject("btnForm.Image")));
             this.btnForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,7 +314,7 @@
             // 
             this.txtPreviousReading.BackColor = System.Drawing.Color.White;
             this.txtPreviousReading.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPreviousReading.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreviousReading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreviousReading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPreviousReading.HintForeColor = System.Drawing.Color.Empty;
             this.txtPreviousReading.HintText = "Previous Reading";
@@ -335,7 +335,7 @@
             // 
             this.txtCustomerCode.BackColor = System.Drawing.Color.White;
             this.txtCustomerCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerCode.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustomerCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCustomerCode.HintForeColor = System.Drawing.Color.Empty;
             this.txtCustomerCode.HintText = "Customer ID";
@@ -355,7 +355,7 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.White;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HintForeColor = System.Drawing.Color.Empty;
             this.txtName.HintText = "Name";
@@ -375,7 +375,7 @@
             // 
             this.txtDatePaid.BackColor = System.Drawing.Color.White;
             this.txtDatePaid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDatePaid.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDatePaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDatePaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDatePaid.HintForeColor = System.Drawing.Color.Empty;
             this.txtDatePaid.HintText = "Date Paid";
@@ -395,7 +395,7 @@
             // 
             this.txtORNo.BackColor = System.Drawing.Color.White;
             this.txtORNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtORNo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtORNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtORNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtORNo.HintForeColor = System.Drawing.Color.Empty;
             this.txtORNo.HintText = "OR No.";
@@ -415,7 +415,7 @@
             // 
             this.txtCurrentBill.BackColor = System.Drawing.Color.White;
             this.txtCurrentBill.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCurrentBill.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCurrentBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCurrentBill.HintForeColor = System.Drawing.Color.Empty;
             this.txtCurrentBill.HintText = "Current Bill";
@@ -424,7 +424,7 @@
             this.txtCurrentBill.LineIdleColor = System.Drawing.Color.Black;
             this.txtCurrentBill.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.txtCurrentBill.LineThickness = 1;
-            this.txtCurrentBill.Location = new System.Drawing.Point(4, 435);
+            this.txtCurrentBill.Location = new System.Drawing.Point(4, 455);
             this.txtCurrentBill.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurrentBill.Name = "txtCurrentBill";
             this.txtCurrentBill.Size = new System.Drawing.Size(165, 33);
@@ -436,7 +436,7 @@
             // 
             this.txtTotalMembers.BackColor = System.Drawing.Color.White;
             this.txtTotalMembers.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotalMembers.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.txtTotalMembers.HintForeColor = System.Drawing.Color.Empty;
             this.txtTotalMembers.HintText = "";
@@ -445,10 +445,10 @@
             this.txtTotalMembers.LineIdleColor = System.Drawing.Color.Black;
             this.txtTotalMembers.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.txtTotalMembers.LineThickness = 1;
-            this.txtTotalMembers.Location = new System.Drawing.Point(846, 394);
+            this.txtTotalMembers.Location = new System.Drawing.Point(863, 415);
             this.txtTotalMembers.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalMembers.Name = "txtTotalMembers";
-            this.txtTotalMembers.Size = new System.Drawing.Size(198, 33);
+            this.txtTotalMembers.Size = new System.Drawing.Size(181, 33);
             this.txtTotalMembers.TabIndex = 85;
             this.txtTotalMembers.TabStop = false;
             this.txtTotalMembers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -457,7 +457,7 @@
             // 
             this.txtOtherInformation.BackColor = System.Drawing.Color.White;
             this.txtOtherInformation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOtherInformation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtherInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOtherInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOtherInformation.HintForeColor = System.Drawing.Color.Empty;
             this.txtOtherInformation.HintText = "Other Information";
@@ -477,7 +477,7 @@
             // 
             this.txtBalance.BackColor = System.Drawing.Color.White;
             this.txtBalance.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBalance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBalance.HintForeColor = System.Drawing.Color.Empty;
             this.txtBalance.HintText = "Balance";
@@ -497,7 +497,7 @@
             // 
             this.txtTotalCBM.BackColor = System.Drawing.Color.White;
             this.txtTotalCBM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotalCBM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalCBM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalCBM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTotalCBM.HintForeColor = System.Drawing.Color.Empty;
             this.txtTotalCBM.HintText = "Total Cubic Meter";
@@ -506,7 +506,7 @@
             this.txtTotalCBM.LineIdleColor = System.Drawing.Color.Black;
             this.txtTotalCBM.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.txtTotalCBM.LineThickness = 1;
-            this.txtTotalCBM.Location = new System.Drawing.Point(296, 435);
+            this.txtTotalCBM.Location = new System.Drawing.Point(296, 455);
             this.txtTotalCBM.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalCBM.Name = "txtTotalCBM";
             this.txtTotalCBM.Size = new System.Drawing.Size(157, 33);
@@ -518,7 +518,7 @@
             // 
             this.txtAmountPaid.BackColor = System.Drawing.Color.White;
             this.txtAmountPaid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAmountPaid.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmountPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmountPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAmountPaid.HintForeColor = System.Drawing.Color.Empty;
             this.txtAmountPaid.HintText = "Amount Paid";
@@ -538,7 +538,7 @@
             // 
             this.txtPreviousBalance.BackColor = System.Drawing.Color.White;
             this.txtPreviousBalance.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPreviousBalance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreviousBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreviousBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPreviousBalance.HintForeColor = System.Drawing.Color.Empty;
             this.txtPreviousBalance.HintText = "Previous Balance";
@@ -558,7 +558,7 @@
             // 
             this.txtConsume.BackColor = System.Drawing.Color.White;
             this.txtConsume.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtConsume.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsume.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConsume.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtConsume.HintForeColor = System.Drawing.Color.Empty;
             this.txtConsume.HintText = "Consume";
@@ -567,7 +567,7 @@
             this.txtConsume.LineIdleColor = System.Drawing.Color.Black;
             this.txtConsume.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.txtConsume.LineThickness = 1;
-            this.txtConsume.Location = new System.Drawing.Point(177, 435);
+            this.txtConsume.Location = new System.Drawing.Point(177, 455);
             this.txtConsume.Margin = new System.Windows.Forms.Padding(4);
             this.txtConsume.Name = "txtConsume";
             this.txtConsume.Size = new System.Drawing.Size(111, 33);
@@ -579,7 +579,7 @@
             // 
             this.txtLessCubicMeter.BackColor = System.Drawing.Color.White;
             this.txtLessCubicMeter.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLessCubicMeter.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLessCubicMeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLessCubicMeter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtLessCubicMeter.HintForeColor = System.Drawing.Color.Empty;
             this.txtLessCubicMeter.HintText = "Less Cubic Meter";
@@ -600,7 +600,7 @@
             // 
             this.txtAmountPerCubicMeter.BackColor = System.Drawing.Color.White;
             this.txtAmountPerCubicMeter.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAmountPerCubicMeter.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmountPerCubicMeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmountPerCubicMeter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAmountPerCubicMeter.HintForeColor = System.Drawing.Color.Empty;
             this.txtAmountPerCubicMeter.HintText = "Amount Per Cubic Meter";
@@ -621,7 +621,7 @@
             // 
             this.txtMeterNumber.BackColor = System.Drawing.Color.White;
             this.txtMeterNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMeterNumber.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeterNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMeterNumber.HintForeColor = System.Drawing.Color.Empty;
             this.txtMeterNumber.HintText = "Meter Number";
@@ -641,7 +641,7 @@
             // 
             this.txtCurrentReading.BackColor = System.Drawing.Color.White;
             this.txtCurrentReading.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCurrentReading.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentReading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCurrentReading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCurrentReading.HintForeColor = System.Drawing.Color.Empty;
             this.txtCurrentReading.HintText = "Current Reading";
@@ -661,22 +661,22 @@
             // lblALOWDA
             // 
             this.lblALOWDA.AutoSize = true;
-            this.lblALOWDA.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblALOWDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblALOWDA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
             this.lblALOWDA.Location = new System.Drawing.Point(315, 0);
             this.lblALOWDA.Name = "lblALOWDA";
-            this.lblALOWDA.Size = new System.Drawing.Size(359, 21);
+            this.lblALOWDA.Size = new System.Drawing.Size(315, 20);
             this.lblALOWDA.TabIndex = 55;
             this.lblALOWDA.Text = "Aloguinsan Water Development Authority";
             // 
             // lblBonbonUpper
             // 
             this.lblBonbonUpper.AutoSize = true;
-            this.lblBonbonUpper.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBonbonUpper.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBonbonUpper.ForeColor = System.Drawing.Color.Fuchsia;
             this.lblBonbonUpper.Location = new System.Drawing.Point(361, 17);
             this.lblBonbonUpper.Name = "lblBonbonUpper";
-            this.lblBonbonUpper.Size = new System.Drawing.Size(236, 18);
+            this.lblBonbonUpper.Size = new System.Drawing.Size(235, 18);
             this.lblBonbonUpper.TabIndex = 54;
             this.lblBonbonUpper.Text = "Barangay BONBON-UPPER (006)";
             // 
@@ -684,7 +684,7 @@
             // 
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Search";
@@ -711,7 +711,7 @@
             this.dgvBonbonUpper.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -737,7 +737,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvBonbonUpper.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvBonbonUpper.Size = new System.Drawing.Size(842, 351);
+            this.dgvBonbonUpper.Size = new System.Drawing.Size(842, 372);
             this.dgvBonbonUpper.TabIndex = 61;
             this.dgvBonbonUpper.TabStop = false;
             this.dgvBonbonUpper.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvBonbonUpper_CellFormatting);

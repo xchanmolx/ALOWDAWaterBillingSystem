@@ -11,7 +11,7 @@ namespace WaterBillingSystemUI.DAL
 {
     public class UserDAL
     {
-        public static string myconnstrng = @"Data Source=ABTIK\SQLEXPRESS;Initial Catalog=WaterBillingSystem;Integrated Security=True";
+        public static string myconnstrng = @"Data Source=.\SQLEXPRESS;Initial Catalog=WaterBillingSystem;Integrated Security=True";
 
         #region Select data from Database
         public DataTable Select()

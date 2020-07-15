@@ -519,7 +519,8 @@ namespace WaterBillingSystemUI
                 txtAmountPaid.Focus();
             }
 
-            this.dgvAquapure.Size = new System.Drawing.Size(1123, 305);
+            // Size(1123, 305);
+            this.dgvAquapure.Size = new System.Drawing.Size(1123, 290);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -841,7 +842,7 @@ namespace WaterBillingSystemUI
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            this.dgvAquapure.Size = new System.Drawing.Size(1123, 305);
+            this.dgvAquapure.Size = new System.Drawing.Size(1123, 290);
 
             btnSave.Enabled = true;
             btnUpdate.Enabled = false;

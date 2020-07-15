@@ -300,7 +300,7 @@ namespace WaterBillingSystemUI
 
             txtCurrentReading.Focus();
 
-            this.dgvEsperanzaModing.Size = new System.Drawing.Size(1123, 305);
+            this.dgvEsperanzaModing.Size = new System.Drawing.Size(1123, 290);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -563,7 +563,7 @@ namespace WaterBillingSystemUI
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            this.dgvEsperanzaModing.Size = new System.Drawing.Size(1123, 305);
+            this.dgvEsperanzaModing.Size = new System.Drawing.Size(1123, 290);
 
             btnSave.Enabled = true;
             btnUpdate.Enabled = false;

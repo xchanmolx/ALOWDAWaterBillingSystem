@@ -7,7 +7,6 @@ namespace WaterBillingSystemUI.BLL
 {
     public class BonbonUpperBLL
     {
-
         const decimal Min_Charge = 120;
         const decimal Zero = 0;
         decimal totalCharge;
@@ -22,21 +21,22 @@ namespace WaterBillingSystemUI.BLL
         public int LessCBM { get; set; }
         public decimal TotalCBM { get { return Math.Max(0, Consume - LessCBM); } }
         public decimal AmountPerCBM { get; set; }
-        public decimal Bill {
+        public decimal Bill
+        {
             get
             {
-                if (Consume <= 10)
+                if (TotalCBM <= 10)
                 {
                     totalCharge = Min_Charge;
 
-                    if (Consume <= 0)
+                    if (TotalCBM <= 0)
                     {
                         totalCharge = Zero;
                     }
                 }
                 else
                 {
-                    totalCharge = ((Consume - 10) * AmountPerCBM) + Min_Charge;
+                    totalCharge = ((TotalCBM - 10) * AmountPerCBM) + Min_Charge;
                 }
 
                 return totalCharge;

@@ -62,6 +62,17 @@
             this.pctrBoxBucket = new System.Windows.Forms.PictureBox();
             this.lblPercentage = new System.Windows.Forms.Label();
             this.bunifuCircleProgressbar = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.panelDeveloped = new System.Windows.Forms.Panel();
+            this.lblUnderline = new System.Windows.Forms.Label();
+            this.pctrBoxWater1 = new System.Windows.Forms.PictureBox();
+            this.pctrBoxTap = new System.Windows.Forms.PictureBox();
+            this.pctrBoxWater2 = new System.Windows.Forms.PictureBox();
+            this.pctrBoxWater3 = new System.Windows.Forms.PictureBox();
+            this.pctrBoxWater4 = new System.Windows.Forms.PictureBox();
+            this.timerShutdown = new System.Windows.Forms.Timer(this.components);
+            this.btnCalculator = new System.Windows.Forms.Button();
+            this.txtDateTime = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.bonbonUpperCustomControl11 = new WaterBillingSystemUI.BonbonUpperCustomControl1();
             this.zaragosaCustomControl1 = new WaterBillingSystemUI.ZaragosaCustomControl();
             this.saksakCustomControl1 = new WaterBillingSystemUI.SaksakCustomControl();
@@ -77,17 +88,6 @@
             this.aquapureCustomControl1 = new WaterBillingSystemUI.AquapureCustomControl();
             this.angilanCustomControl1 = new WaterBillingSystemUI.AngilanCustomControl();
             this.homeCustomControl1 = new WaterBillingSystemUI.HomeCustomControl();
-            this.panelDeveloped = new System.Windows.Forms.Panel();
-            this.lblUnderline = new System.Windows.Forms.Label();
-            this.pctrBoxWater1 = new System.Windows.Forms.PictureBox();
-            this.pctrBoxTap = new System.Windows.Forms.PictureBox();
-            this.pctrBoxWater2 = new System.Windows.Forms.PictureBox();
-            this.pctrBoxWater3 = new System.Windows.Forms.PictureBox();
-            this.pctrBoxWater4 = new System.Windows.Forms.PictureBox();
-            this.timerShutdown = new System.Windows.Forms.Timer(this.components);
-            this.btnCalculator = new System.Windows.Forms.Button();
-            this.txtDateTime = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.panelSlider.SuspendLayout();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrBoxLogo)).BeginInit();
@@ -357,7 +357,7 @@
             this.btnBonbonAngilan.Size = new System.Drawing.Size(206, 50);
             this.btnBonbonAngilan.TabIndex = 3;
             this.btnBonbonAngilan.TabStop = false;
-            this.btnBonbonAngilan.Text = "   Bonbon An&gilan";
+            this.btnBonbonAngilan.Text = "   Ulbohan, Angilan";
             this.btnBonbonAngilan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBonbonAngilan.UseVisualStyleBackColor = true;
             this.btnBonbonAngilan.Click += new System.EventHandler(this.btnBonbonAngilan_Click);
@@ -627,6 +627,119 @@
             this.bunifuCircleProgressbar.TabIndex = 0;
             this.bunifuCircleProgressbar.Value = 0;
             // 
+            // panelDeveloped
+            // 
+            this.panelDeveloped.Controls.Add(this.lblDeveloped);
+            this.panelDeveloped.Controls.Add(this.lblUnderline);
+            this.panelDeveloped.Location = new System.Drawing.Point(53, 13);
+            this.panelDeveloped.Name = "panelDeveloped";
+            this.panelDeveloped.Size = new System.Drawing.Size(162, 43);
+            this.panelDeveloped.TabIndex = 5;
+            // 
+            // lblUnderline
+            // 
+            this.lblUnderline.AutoSize = true;
+            this.lblUnderline.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnderline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.lblUnderline.Location = new System.Drawing.Point(0, 7);
+            this.lblUnderline.Name = "lblUnderline";
+            this.lblUnderline.Size = new System.Drawing.Size(160, 12);
+            this.lblUnderline.TabIndex = 3;
+            this.lblUnderline.Text = "_______________________________";
+            // 
+            // pctrBoxWater1
+            // 
+            this.pctrBoxWater1.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater1.Image")));
+            this.pctrBoxWater1.Location = new System.Drawing.Point(627, 83);
+            this.pctrBoxWater1.Name = "pctrBoxWater1";
+            this.pctrBoxWater1.Size = new System.Drawing.Size(20, 19);
+            this.pctrBoxWater1.TabIndex = 6;
+            this.pctrBoxWater1.TabStop = false;
+            // 
+            // pctrBoxTap
+            // 
+            this.pctrBoxTap.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxTap.Image")));
+            this.pctrBoxTap.Location = new System.Drawing.Point(592, 29);
+            this.pctrBoxTap.Name = "pctrBoxTap";
+            this.pctrBoxTap.Size = new System.Drawing.Size(53, 51);
+            this.pctrBoxTap.TabIndex = 6;
+            this.pctrBoxTap.TabStop = false;
+            // 
+            // pctrBoxWater2
+            // 
+            this.pctrBoxWater2.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater2.Image")));
+            this.pctrBoxWater2.Location = new System.Drawing.Point(641, 111);
+            this.pctrBoxWater2.Name = "pctrBoxWater2";
+            this.pctrBoxWater2.Size = new System.Drawing.Size(20, 19);
+            this.pctrBoxWater2.TabIndex = 6;
+            this.pctrBoxWater2.TabStop = false;
+            // 
+            // pctrBoxWater3
+            // 
+            this.pctrBoxWater3.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater3.Image")));
+            this.pctrBoxWater3.Location = new System.Drawing.Point(632, 140);
+            this.pctrBoxWater3.Name = "pctrBoxWater3";
+            this.pctrBoxWater3.Size = new System.Drawing.Size(20, 19);
+            this.pctrBoxWater3.TabIndex = 6;
+            this.pctrBoxWater3.TabStop = false;
+            // 
+            // pctrBoxWater4
+            // 
+            this.pctrBoxWater4.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater4.Image")));
+            this.pctrBoxWater4.Location = new System.Drawing.Point(645, 168);
+            this.pctrBoxWater4.Name = "pctrBoxWater4";
+            this.pctrBoxWater4.Size = new System.Drawing.Size(20, 19);
+            this.pctrBoxWater4.TabIndex = 6;
+            this.pctrBoxWater4.TabStop = false;
+            // 
+            // timerShutdown
+            // 
+            this.timerShutdown.Tick += new System.EventHandler(this.timerShutdown_Tick);
+            // 
+            // btnCalculator
+            // 
+            this.btnCalculator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalculator.FlatAppearance.BorderSize = 0;
+            this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalculator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculator.ForeColor = System.Drawing.Color.White;
+            this.btnCalculator.Image = ((System.Drawing.Image)(resources.GetObject("btnCalculator.Image")));
+            this.btnCalculator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalculator.Location = new System.Drawing.Point(1250, 11);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(36, 36);
+            this.btnCalculator.TabIndex = 3;
+            this.btnCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalculator.UseVisualStyleBackColor = true;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
+            // 
+            // txtDateTime
+            // 
+            this.txtDateTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDateTime.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDateTime.HintForeColor = System.Drawing.Color.Empty;
+            this.txtDateTime.HintText = "";
+            this.txtDateTime.isPassword = false;
+            this.txtDateTime.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.txtDateTime.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.txtDateTime.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.txtDateTime.LineThickness = 3;
+            this.txtDateTime.Location = new System.Drawing.Point(865, 20);
+            this.txtDateTime.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.Size = new System.Drawing.Size(191, 33);
+            this.txtDateTime.TabIndex = 7;
+            this.txtDateTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // backgroundWorker
+            // 
+            this.backgroundWorker.WorkerReportsProgress = true;
+            this.backgroundWorker.WorkerSupportsCancellation = true;
+            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
+            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
+            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
+            // 
             // bonbonUpperCustomControl11
             // 
             this.bonbonUpperCustomControl11.BackColor = System.Drawing.Color.White;
@@ -776,119 +889,6 @@
             this.homeCustomControl1.Name = "homeCustomControl1";
             this.homeCustomControl1.Size = new System.Drawing.Size(1312, 564);
             this.homeCustomControl1.TabIndex = 0;
-            // 
-            // panelDeveloped
-            // 
-            this.panelDeveloped.Controls.Add(this.lblDeveloped);
-            this.panelDeveloped.Controls.Add(this.lblUnderline);
-            this.panelDeveloped.Location = new System.Drawing.Point(53, 13);
-            this.panelDeveloped.Name = "panelDeveloped";
-            this.panelDeveloped.Size = new System.Drawing.Size(162, 43);
-            this.panelDeveloped.TabIndex = 5;
-            // 
-            // lblUnderline
-            // 
-            this.lblUnderline.AutoSize = true;
-            this.lblUnderline.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnderline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
-            this.lblUnderline.Location = new System.Drawing.Point(0, 7);
-            this.lblUnderline.Name = "lblUnderline";
-            this.lblUnderline.Size = new System.Drawing.Size(160, 12);
-            this.lblUnderline.TabIndex = 3;
-            this.lblUnderline.Text = "_______________________________";
-            // 
-            // pctrBoxWater1
-            // 
-            this.pctrBoxWater1.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater1.Image")));
-            this.pctrBoxWater1.Location = new System.Drawing.Point(627, 83);
-            this.pctrBoxWater1.Name = "pctrBoxWater1";
-            this.pctrBoxWater1.Size = new System.Drawing.Size(20, 19);
-            this.pctrBoxWater1.TabIndex = 6;
-            this.pctrBoxWater1.TabStop = false;
-            // 
-            // pctrBoxTap
-            // 
-            this.pctrBoxTap.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxTap.Image")));
-            this.pctrBoxTap.Location = new System.Drawing.Point(592, 29);
-            this.pctrBoxTap.Name = "pctrBoxTap";
-            this.pctrBoxTap.Size = new System.Drawing.Size(53, 51);
-            this.pctrBoxTap.TabIndex = 6;
-            this.pctrBoxTap.TabStop = false;
-            // 
-            // pctrBoxWater2
-            // 
-            this.pctrBoxWater2.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater2.Image")));
-            this.pctrBoxWater2.Location = new System.Drawing.Point(641, 111);
-            this.pctrBoxWater2.Name = "pctrBoxWater2";
-            this.pctrBoxWater2.Size = new System.Drawing.Size(20, 19);
-            this.pctrBoxWater2.TabIndex = 6;
-            this.pctrBoxWater2.TabStop = false;
-            // 
-            // pctrBoxWater3
-            // 
-            this.pctrBoxWater3.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater3.Image")));
-            this.pctrBoxWater3.Location = new System.Drawing.Point(632, 140);
-            this.pctrBoxWater3.Name = "pctrBoxWater3";
-            this.pctrBoxWater3.Size = new System.Drawing.Size(20, 19);
-            this.pctrBoxWater3.TabIndex = 6;
-            this.pctrBoxWater3.TabStop = false;
-            // 
-            // pctrBoxWater4
-            // 
-            this.pctrBoxWater4.Image = ((System.Drawing.Image)(resources.GetObject("pctrBoxWater4.Image")));
-            this.pctrBoxWater4.Location = new System.Drawing.Point(645, 168);
-            this.pctrBoxWater4.Name = "pctrBoxWater4";
-            this.pctrBoxWater4.Size = new System.Drawing.Size(20, 19);
-            this.pctrBoxWater4.TabIndex = 6;
-            this.pctrBoxWater4.TabStop = false;
-            // 
-            // timerShutdown
-            // 
-            this.timerShutdown.Tick += new System.EventHandler(this.timerShutdown_Tick);
-            // 
-            // btnCalculator
-            // 
-            this.btnCalculator.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculator.FlatAppearance.BorderSize = 0;
-            this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalculator.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculator.ForeColor = System.Drawing.Color.White;
-            this.btnCalculator.Image = ((System.Drawing.Image)(resources.GetObject("btnCalculator.Image")));
-            this.btnCalculator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalculator.Location = new System.Drawing.Point(1250, 11);
-            this.btnCalculator.Name = "btnCalculator";
-            this.btnCalculator.Size = new System.Drawing.Size(36, 36);
-            this.btnCalculator.TabIndex = 3;
-            this.btnCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalculator.UseVisualStyleBackColor = true;
-            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
-            // 
-            // txtDateTime
-            // 
-            this.txtDateTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDateTime.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDateTime.HintForeColor = System.Drawing.Color.Empty;
-            this.txtDateTime.HintText = "";
-            this.txtDateTime.isPassword = false;
-            this.txtDateTime.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
-            this.txtDateTime.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
-            this.txtDateTime.LineMouseHoverColor = System.Drawing.Color.Black;
-            this.txtDateTime.LineThickness = 3;
-            this.txtDateTime.Location = new System.Drawing.Point(865, 20);
-            this.txtDateTime.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.Size = new System.Drawing.Size(191, 33);
-            this.txtDateTime.TabIndex = 7;
-            this.txtDateTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // backgroundWorker
-            // 
-            this.backgroundWorker.WorkerReportsProgress = true;
-            this.backgroundWorker.WorkerSupportsCancellation = true;
-            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
-            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
-            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
             // frmMainWBS
             // 
