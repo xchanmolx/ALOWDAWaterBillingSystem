@@ -11,12 +11,13 @@ namespace WaterBillingSystemUI.UI
 {
     public partial class frmPrintReceiptAquapure : Form
     {
-        string _date, _customerID, _customerName, _meterSerialNo, _currentReading, _previousReading, _totalConsumed, _minimumCubic, _rateMinCubicMeter, _amountMinimum, _excessCubicMeter, _rateExcessCubicMeter, _amountExcess, _totalAmount, _VAT, _currentBill, _previousBalance, _amountDue, _balancePilipinas, _totalDue, _priorityLessAmount;
+        string _previousDate, _date, _customerID, _customerName, _meterSerialNo, _currentReading, _previousReading, _totalConsumed, _minimumCubic, _rateMinCubicMeter, _amountMinimum, _excessCubicMeter, _rateExcessCubicMeter, _amountExcess, _totalAmount, _VAT, _currentBill, _previousBalance, _amountDue, _balancePilipinas, _totalDue, _priorityLessAmount;
 
-        public frmPrintReceiptAquapure(string date, string customerID, string customerName, string meterSerialNo, string currentReading, string previousReading, string totalConsumed, string minimumCubic, string rateMinCubicMeter, string amountMinimum, string excessCubicMeter, string rateExcessCubicMeter, string amountExcess, string totalAmount, string VAT, string currentBill, string previousBalance, string amountDue, string balancePilipinas, string totalDue, string priorityLessAmount)
+        public frmPrintReceiptAquapure(string previousDate, string date, string customerID, string customerName, string meterSerialNo, string currentReading, string previousReading, string totalConsumed, string minimumCubic, string rateMinCubicMeter, string amountMinimum, string excessCubicMeter, string rateExcessCubicMeter, string amountExcess, string totalAmount, string VAT, string currentBill, string previousBalance, string amountDue, string balancePilipinas, string totalDue, string priorityLessAmount)
         {
             InitializeComponent();
 
+            _previousDate = previousDate;
             _date = date;
             _customerID = customerID;
             _customerName = customerName;
@@ -44,6 +45,7 @@ namespace WaterBillingSystemUI.UI
         {
             Microsoft.Reporting.WinForms.ReportParameter[] para = new Microsoft.Reporting.WinForms.ReportParameter[]
             {
+                new Microsoft.Reporting.WinForms.ReportParameter("pPreviousDate", _previousDate),
                 new Microsoft.Reporting.WinForms.ReportParameter("pDate", _date),
                 new Microsoft.Reporting.WinForms.ReportParameter("pCustomerID", _customerID),
                 new Microsoft.Reporting.WinForms.ReportParameter("pCustomerName", _customerName),
